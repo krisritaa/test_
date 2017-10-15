@@ -14,7 +14,8 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i <5 ; i++) {
+        int COUNT= 5;
+        for (int i = 0; i <COUNT ; i++) {
             try {
                 consumerSema.acquire();
                 shared.get();
